@@ -26,7 +26,7 @@ parameters:
     enum: [ small, medium, medium+, large, xlarge, 2xlarge, 2xlarge+ ]
   docker_repo:
     description: |
-      The version of the docker repository. 
+      The version of the docker repository.
       This allows CircleCI to pick the correct version of Unity within the correct version of the docker repository.
       This should be a number like 2, 3, 3.0 or 3.0.1
     type: string
