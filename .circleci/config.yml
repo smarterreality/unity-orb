@@ -21,7 +21,7 @@ workflows:
       - shellcheck/check:
           filters: *filters
       - orb-tools/continue:
-          orb_name: unity
+          orb_name: unity-orb
           pipeline_number: << pipeline.number >>
           vcs_type: << pipeline.project.type >>
           requires: [orb-tools/lint, orb-tools/pack, orb-tools/review, shellcheck/check]

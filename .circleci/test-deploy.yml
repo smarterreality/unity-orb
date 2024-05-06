@@ -22,7 +22,7 @@ pre-steps:
           git clone --branch master --single-branch https://github.com/EricRibeiro/Unity2D-Demo-Game-CI-CD.git ../Unity2D-Demo-Game-CI-CD
 
           # Clone the Unity orb
-          git clone https://github.com/game-ci/unity-orb.git .
+          git clone https://github.com/smarterreality/unity-orb.git .
 
           # Move the demo project to the project folder
           mv ../Unity2D-Demo-Game-CI-CD ./Unity2D-Demo-Game-CI-CD
@@ -34,7 +34,7 @@ pre-steps:
           git clone --branch windows-il2cpp --single-branch https://github.com/EricRibeiro/Unity2D-Demo-Game-CI-CD.git ../Unity2D-Demo-Game-CI-CD
 
           # Clone the Unity orb
-          git clone https://github.com/game-ci/unity-orb.git .
+          git clone https://github.com/smarterreality/unity-orb.git .
 
           # Move the demo project to the project folder
           mv ../Unity2D-Demo-Game-CI-CD ./Unity2D-Demo-Game-CI-CD
@@ -46,7 +46,7 @@ pre-steps:
           git clone --branch custom-build-method --single-branch https://github.com/EricRibeiro/Unity2D-Demo-Game-CI-CD.git ../Unity2D-Demo-Game-CI-CD
 
           # Clone the Unity orb
-          git clone https://github.com/game-ci/unity-orb.git .
+          git clone https://github.com/smarterreality/unity-orb.git .
 
           # Move the demo project to the project folder
           mv ../Unity2D-Demo-Game-CI-CD ./Unity2D-Demo-Game-CI-CD
@@ -472,7 +472,7 @@ workflows:
       - orb-tools/pack:
           filters: *release-filters
       - orb-tools/publish:
-          orb_name: game-ci/unity
+          orb_name: smarterreality/unity-orb
           vcs_type: << pipeline.project.type >>
           pub_type: production
           requires:
